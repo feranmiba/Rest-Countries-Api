@@ -1,0 +1,262 @@
+.navbar-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 0px 50px;
+}
+.navbar-con p {
+    font-size: 18px;
+    color: #1a1a1a;
+    font-weight: bolder;
+}
+.navbar-con button {
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.dark .home p,
+.dark .home p input ,
+.dark .theDetail .Detail,
+.dark .navbar-con  {
+    color: #d5d3d3;
+    font-weight: 200;
+    background-color: rgb(21, 17, 17);
+} 
+
+.dark .the-Detail  span,
+.dark .navbar-con p,
+.sun {
+    color: #fff;
+    font-weight: bolder;
+}
+.dark .detail-country,
+.dark .border button {
+    color: #fff;
+}
+
+.home p {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 15px;
+}
+.home p input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+.home p input::placeholder {
+    font-size: 15px;
+    color: lightgray;
+} 
+.select option {
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* THE FIRST DETAILS */
+.theDetail {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.theDetail .Detail {
+  width: 20%;
+  min-width: 250px;
+  padding: 10px 10px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+  margin: 15px 0;
+  background-color: #fff;
+  transition: 0.2s ease;
+  position: relative;
+  border-radius: 15px;
+}
+
+.theDetail .Detail .detail-con .the-Detail img {
+    width: 100%;
+}
+.the-Detail div {
+    padding: 10px 15px;
+}
+.the-Detail  span{
+    font-size: 20px;
+    color: #1a1a1a;
+    font-weight: bolder;
+}
+.de-link {
+    text-decoration: none;
+}
+
+/*END OF THE FIRST DETAILS*/
+.p-btn {
+    display: flex;
+    padding: 10px 15px;
+   
+}
+.p-btn p {
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    width: 10%;
+    padding: 2px 15px;
+}
+.p-btn p button {
+    width: 100%;
+    padding: 9px 0px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.detail-country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 80px;
+    width: 70%;
+}
+.detail-country div img {
+    width: 90%;
+    height: 60vh;
+}
+.detail-country span  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.2;
+    width: 160%;
+}
+.detail-country h1 {
+    font-size: 35px;
+}
+.detail-country span div p {
+    font-size: 16px;
+}
+.border {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.border button {
+    font-size: 12px;
+    padding: 2px 18px;
+    background-color: transparent;
+    border: 0.5mm solid #eab7b7;
+}
+
+
+@media (max-width:1200px) {
+    .detail-country {
+        padding: 9px 60px;
+        width: 80%;
+    }
+    .detail-country span  { 
+        width: 150%;
+    }
+    .detail-country div img {
+        width: 90%;
+        height: 60vh;
+    }
+}
+@media (max-width:1024px) {
+    .detail-country {
+        padding: 9px 40px;
+        width: 80%;
+    }
+    .detail-country span  { 
+        width: 130%;
+    }
+    .detail-country div img {
+        width: 95%;
+        height: 30vh;
+    }
+    .detail-country h1 {
+        font-size: 30px;
+    }
+    .detail-country span div p {
+        font-size: 15px;
+    }
+} 
+
+@media (max-width:912px) {
+    .p-btn p {  
+        width: 15%;
+    }
+    .theDetail .Detail {
+        margin: 35px ;
+    }
+    .detail-country {
+        padding: 9px 20px;
+        width: 90%;
+    }
+    .detail-country span  { 
+        width: 110%;
+        line-height: 0.8;
+    }
+    .detail-country div img {
+        width: 90%;
+        height: 30vh;
+    }
+    .detail-country h1 {
+        font-size: 25px;
+    }
+    .detail-country span div p {
+        font-size: 14px;
+        line-height: 1;
+    }
+}
+@media (max-width:600px) { 
+    .p-btn p {  
+        width: 25%;
+    }
+    .theDetail .Detail {
+        width: 100%;
+    }
+    .detail-country {
+        padding: 9px 50px;
+        width: 70%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .detail-country span  { 
+        width: 100%;
+        line-height: 1.6;
+        flex-wrap: wrap;
+    }
+    .detail-country div img {
+        width: 100%;
+    }
+    .detail-country span div p {
+        font-size: 15px;
+    }
+
+    .border {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .border button {
+        padding: 10px 15px;
+        margin-left: 3%;
+        font-size: 15px;
+    }
+}
